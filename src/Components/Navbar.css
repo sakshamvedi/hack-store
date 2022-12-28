@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+.upperbar {
+  overflow: scroll;
+  background: linear-gradient(to right, #0575e6, #021b79);
+  color: white;
+  padding: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Quicksand", sans-serif;
+  font-size: 13px;
+}
+
+navbar {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+}
+navbar h2 {
+  font-size: 22px;
+  margin-left: 25px;
+  margin-right: 50px;
+  font-family: "Pacifico", cursive;
+}
+navbar h1 {
+  font-size: 16px;
+  margin-left: 52px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 100;
+  color: rgba(0, 0, 0, 0.623);
+}
+navbar h1:hover {
+  color: black;
+  cursor: pointer;
+}
+navbar .login {
+  margin-left: 5%;
+  display: flex;
+  align-items: center;
+}
+navbar .login .search-place input {
+  border-radius: 10px;
+  border: solid 0.5px gray;
+  padding-left: 10px;
+  width: 370px;
+  height: 30px;
+  overflow: hidden;
+}
+navbar .login .search-place button {
+  position: relative;
+  left: -8%;
+  top: 10%;
+  cursor: pointer;
+  background-color: white;
+  border: none;
+}
+navbar .login p1 {
+  font-family: "Quicksand", sans-serif;
+  cursor: pointer;
+  margin-right: 2.5vw;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.872);
+}
+navbar .login p1:hover {
+  color: black;
+  cursor: pointer;
+}
+navbar .login .icons {
+  margin-right: 10px;
+}
+
+.line {
+  height: 0.5px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.249);
+}/*# sourceMappingURL=Navbar.css.map */

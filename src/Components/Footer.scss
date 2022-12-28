@@ -1,0 +1,71 @@
+@use 'variables';
+.line{
+   
+ background-color: rgba(0, 0, 0, 0.276);
+ 
+}
+.footer-box{
+
+    height: 400px;
+    width: 100%;
+    display: flex;
+    background-color: variables.$primary-bg ;
+.box1{
+    margin: 20px;
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    justify-content: center;
+    img{
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+    }
+    h1{
+        font-family: variables.$text-head;
+        font-size: 24px;
+
+
+    }
+    p1{
+        font-family: variables.$primary-font;
+        font-size: 12px;
+    }
+   h2{
+    margin-top: 20px;
+        font-family: variables.$primary-font;
+        font-family: 800;
+        font-size: 14px;
+    }
+    span{
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+    
+    }
+}
+
+.box2{
+    margin: 20px;
+    margin-left: 60px;
+    h1 {
+        font-family: variables.$primary-font;
+        font-size: 18px;
+         
+    }
+    ul{
+        margin-left: -40px;
+        list-style: none;
+        font-family: variables.$primary-font;
+     }
+     li{
+        margin-bottom: 20px;
+        cursor: pointer;
+        font-size: 14px;
+     }
+}
+
+
+
+}

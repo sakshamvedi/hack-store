@@ -1,0 +1,321 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap");
+body {
+  overflow-x: hidden;
+}
+
+.herocontainer {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-top: -20px;
+  width: 100%;
+}
+.herocontainer p1 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  margin-left: 20px;
+}
+.herocontainer .productbox {
+  margin-top: 20px;
+  display: grid;
+  grid-auto-flow: column;
+  overflow-x: scroll;
+  padding-bottom: 20px;
+}
+.herocontainer .item {
+  width: 190px;
+  margin-left: 20px;
+  background-color: black;
+  height: 250px;
+  margin-right: 50px;
+  border-radius: 15px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.herocontainer .item p1 {
+  color: white;
+  position: relative;
+  top: 5%;
+  left: 25%;
+}
+.herocontainer .item:hover {
+  cursor: pointer;
+  transition: 0.5s;
+  box-shadow: rgba(0, 0, 0, 0.174) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.herocontainer .item:hover p1 {
+  background-color: rgba(0, 0, 0, 0.358);
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.bestdeals h1 {
+  margin-top: 50px;
+  font-size: 18px;
+  font-family: "Quicksand", sans-serif;
+  margin-left: 22px;
+}
+.bestdeals .containercard {
+  margin-left: 20px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: grid;
+  grid-auto-flow: column;
+  overflow-x: scroll;
+}
+.bestdeals .containercard .mainproductcard {
+  display: flex;
+  width: 350px;
+  padding: 15px;
+  height: 600px;
+  flex-direction: column;
+  margin-right: 30px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.bestdeals .containercard .mainproductcard .cardimage {
+  width: 100%;
+  height: 270px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f6f6f6;
+}
+.bestdeals .containercard .mainproductcard .cardimage img {
+  max-width: 100%;
+  max-height: 80%;
+}
+.bestdeals .containercard .mainproductcard .cardimage .icon {
+  background-color: white;
+  padding: 5px;
+  border-radius: 50%;
+  position: relative;
+  z-index: 10;
+  left: 10%;
+  top: -40%;
+  cursor: pointer;
+}
+.bestdeals .containercard .mainproductcard .cardcontent span {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+}
+.bestdeals .containercard .mainproductcard .cardcontent span p1 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+}
+.bestdeals .containercard .mainproductcard .cardcontent span p2 {
+  margin-left: 25%;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+}
+.bestdeals .containercard .mainproductcard .cardcontent p {
+  margin-top: 5%;
+  opacity: 0.7;
+  width: 70%;
+  font-size: 10px;
+}
+.bestdeals .containercard .mainproductcard .cardcontent ul {
+  margin-left: -30px;
+  list-style: none;
+  display: flex;
+}
+.bestdeals .containercard .mainproductcard .cardcontent button {
+  background-color: white;
+  border: solid 1px black;
+  padding: 10px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  border-radius: 30px;
+}
+.bestdeals .containercard .mainproductcard .cardcontent button:hover {
+  background-color: rgba(0, 0, 0, 0.151);
+  cursor: pointer;
+  color: black;
+}
+
+.brands h1 {
+  margin-top: 50px;
+  font-size: 18px;
+  font-family: "Quicksand", sans-serif;
+  margin-left: 22px;
+}
+.brands .brands-box {
+  padding: 10px;
+  width: 90%;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.brands .brands-box .brand-id {
+  background-color: #f6f6f6;
+  height: 15vh;
+  width: 22%;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  align-items: center;
+}
+.brands .brands-box .brand-id .my-logo {
+  margin-left: 20px;
+}
+.brands .brands-box .brand-id span {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.brands .brands-box .brand-id span p1 {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Quicksand", sans-serif;
+}
+.brands .brands-box .brand-id span p2 {
+  font-size: 8px;
+}
+.brands .brands-box .brand-id:hover {
+  border: solid 1px green;
+  cursor: pointer;
+}
+
+.deals h1 {
+  margin-top: 50px;
+  font-size: 18px;
+  font-family: "Quicksand", sans-serif;
+  margin-left: 22px;
+}
+.deals .off-card {
+  margin-left: 25px;
+  display: flex;
+}
+.deals .off-card .card {
+  width: 23%;
+  border-radius: 15px;
+  height: 400px;
+  margin-right: 25px;
+}
+.deals .off-card .card .part-01 {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: #f6f2d4;
+}
+.deals .off-card .card .part-01 p1 {
+  margin-top: 25px;
+  margin-left: 20px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+.deals .off-card .card .part-01 p2 {
+  margin-top: 5px;
+  margin-left: 30px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  font-size: 45px;
+  color: #ca9916;
+}
+.deals .off-card .card .part-01 p {
+  margin-left: 20px;
+  font-family: "Quicksand", sans-serif;
+  width: 70%;
+  font-size: 12px;
+}
+.deals .off-card .card .part-02 {
+  height: 200px;
+  background-image: url("https://images.unsplash.com/photo-1581541234269-03d5d8576c0e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyNzg2NTJ8MHwxfHNlYXJjaHw2fHxjaGFpcnN8ZW58MHx8fHwxNjcyMTQ3ODI1&ixlib=rb-4.0.3&q=80&w=1080");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.main-image {
+  margin-top: 90px;
+  margin-left: 180px;
+  width: 100%;
+}
+.main-image img {
+  width: 70%;
+  height: 500px;
+}
+.main-image button {
+  position: relative;
+  left: -500px;
+  top: -50%;
+  border: solid white 1px;
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+  padding: 10px;
+  border-radius: 30px;
+}
+.main-image button:hover {
+  background-color: white;
+  color: green;
+  cursor: pointer;
+}
+
+.help-line {
+  margin-bottom: 100px;
+}
+.help-line h1 {
+  margin-top: 50px;
+  font-size: 18px;
+  font-family: "Quicksand", sans-serif;
+  margin-left: 22px;
+}
+.help-line .container {
+  margin-left: 40px;
+  display: flex;
+  flex-direction: row;
+}
+.help-line .container .card {
+  width: 30%;
+  height: 400px;
+  margin-left: 20px;
+  background-color: #f6f6f6;
+}
+.help-line .container .card .part1 {
+  width: 100%;
+  height: 200px;
+  margin-top: 50px;
+  background-color: #f6f6f6;
+}
+.help-line .container .card .part1 p1 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  margin-left: 20px;
+  font-size: 25px;
+}
+.help-line .container .card .part1 h2 {
+  margin-top: 5px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  margin-left: 20px;
+  font-size: 25px;
+}
+.help-line .container .card .part1 p {
+  margin-left: 20px;
+  opacity: 0.7;
+}
+.help-line .container .card .part2 {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}/*# sourceMappingURL=HomeBody.css.map */

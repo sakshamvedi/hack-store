@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap");
+.line {
+  background-color: rgba(0, 0, 0, 0.276);
+}
+
+.footer-box {
+  height: 400px;
+  width: 100%;
+  display: flex;
+  background-color: #f6f6f6;
+}
+.footer-box .box1 {
+  margin: 20px;
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+  justify-content: center;
+}
+.footer-box .box1 img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+.footer-box .box1 h1 {
+  font-family: "Pacifico", cursive;
+  font-size: 24px;
+}
+.footer-box .box1 p1 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 12px;
+}
+.footer-box .box1 h2 {
+  margin-top: 20px;
+  font-family: "Quicksand", sans-serif;
+  font-family: 800;
+  font-size: 14px;
+}
+.footer-box .box1 span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-box .box2 {
+  margin: 20px;
+  margin-left: 60px;
+}
+.footer-box .box2 h1 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 18px;
+}
+.footer-box .box2 ul {
+  margin-left: -40px;
+  list-style: none;
+  font-family: "Quicksand", sans-serif;
+}
+.footer-box .box2 li {
+  margin-bottom: 20px;
+  cursor: pointer;
+  font-size: 14px;
+}/*# sourceMappingURL=Footer.css.map */
