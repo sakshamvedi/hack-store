@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap");
 body {
   overflow-x: hidden;
@@ -131,9 +132,10 @@ body {
   font-family: "Quicksand", sans-serif;
   font-weight: 600;
   border-radius: 30px;
+  margin-right: 20px;
 }
 .bestdeals .containercard .mainproductcard .cardcontent button:hover {
-  background-color: rgba(0, 0, 0, 0.151);
+  background-color: rgba(188, 254, 21, 0.151);
   cursor: pointer;
   color: black;
 }

@@ -14,6 +14,7 @@ function Footer() {
     <div className="box1">
         <img src='H.png'/>
         <h1>Hack-Store</h1>
+        <p1>This Project is solely created by saksham vedi <a href ="https://www.linkedin.com/in/sakshamvedi/">Profile</a></p1>
         <p1>We offer you so much discounts and brands  to you with the comfort of your home , so enjoy the family, we do all the travel for you ! </p1>
      <h2>Accepted Payments</h2>
      <span>

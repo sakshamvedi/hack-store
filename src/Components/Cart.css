@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap");
+.cart-container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Quicksand", sans-serif;
+}
+.cart-container .itembox {
+  margin-top: 20px;
+  background-color: #f6f6f6;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 10px;
+  display: flex;
+  width: 70%;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.cart-container .itembox .box1 {
+  height: 150px;
+  width: 20%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.cart-container .itembox .box2 {
+  margin-left: 20px;
+  display: flex;
+  width: 75%;
+  flex-direction: column;
+}
+.cart-container .itembox .box2 p1 {
+  margin-top: 20px;
+  font-weight: 900;
+}
+.cart-container .itembox .box2 p2 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-weight: 200;
+  opacity: 0.5;
+  margin-top: 5px;
+}
+.cart-container .itembox .box2 span {
+  margin-top: 35px;
+  display: flex;
+  justify-content: space-between;
+}
+.cart-container button {
+  width: 60%;
+  margin-top: 20px;
+  padding: 5px;
+  font-size: 20px;
+  color: white;
+  background-color: orange;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 900;
+  border: none;
+  cursor: pointer;
+}/*# sourceMappingURL=Cart.css.map */

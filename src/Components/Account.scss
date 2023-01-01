@@ -1,5 +1,10 @@
 @use 'variables';
+  
 
+.link{
+    color: black;
+    text-decoration: none;
+}
 .background-div{
     background-size: cover;
     background-position: center;
@@ -34,6 +39,7 @@
     height: 80%;
     width: 400px;
     background-color: white;
+    padding-bottom: 7px;
     border-radius: 40px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     h1{
@@ -49,6 +55,62 @@
         opacity: 0.7;
         margin-bottom: 40px;
         font-family: variables.$primary-font;
+    }
+    input{
+        border-radius: 5px;
+        border:solid 1px rgba(0, 0, 0, 0.151);
+        width: 70%;
+        padding: 10px;
+        margin-bottom: 20px;
+        font-family: variables.$primary-font;
+        font-weight: 700;
+    }
+    button{
+        width: 70%;
+        padding: 10px;
+        border: none;
+        font-size: 15px;
+        font-weight: 800;
+        border-radius: 5px;
+        font-family: variables.$primary-font;
+        background-color: #fdc886;
+        &:hover{
+            background-color: #ec9a34;
+            cursor: pointer;
+        }
+    }
+    p2{
+        font-family: variables.$primary-font;
+        margin-top: 20px;
+        font-weight: 800;
+        font-size: 13px;
+    }
+
+    div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        background-color: rgba(255, 228, 196, 0.192);
+        border: solid 1px rgba(0, 0, 0, 0.158);
+        padding: 10px;
+        width: 60%;
+        font-weight: 800;
+        border-radius: 5px;
+        font-family: variables.$primary-font;
+        &:hover{
+            cursor: pointer;
+            background-color: #ec993422;
+        }
+        .icon{
+            margin-right: 20px;
+        }
+       
+    }
+    h2{
+        font-size: 12px;
+        font-family: variables.$primary-font
+        
     }
 }
 

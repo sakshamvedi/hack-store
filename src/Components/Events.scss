@@ -1,0 +1,80 @@
+@use "variables";
+
+.eventbuttons{
+   
+    padding: 30px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+    button{
+        width: 60%;
+        height:50px;
+        font-family: variables.$primary-font;
+        font-weight: 800;
+        font-size: 19px;
+        background-color: #fd9c42;
+        border: none;
+        color: white;
+       &:hover{
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+       }
+        
+    }
+    .links{
+        cursor: pointer;
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.events{
+    display: flex;
+   flex-wrap: wrap;
+   margin-left: 50px;
+align-items: center;
+    .events-cards{
+        display: flex;
+        flex-direction: row;
+        width: 30%;
+        margin: 50px;
+        border: solid 2px #e16753;
+        border-radius: 20px;
+        height: 250px;
+
+        .box1{
+            width: 20%;
+            background-color: #5487e2;
+            height: 100%;
+            border-top-left-radius: 18px;
+            border-bottom-left-radius: 18px;
+        }
+        .box2{
+            margin-top: 20px;
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+            p1{
+                margin-bottom: 10px;
+                font-family: variables.$primary-font;
+                font-weight: 800;
+            }
+            button{
+                margin-bottom: 20px;
+                width: 100%;
+                border: none;
+                background-color: #05871b;
+                padding: 10px;
+                border-radius: 15px;
+                cursor: pointer;
+                a{
+                    color: white;
+                    text-decoration: none;
+                    font-family: variables.$primary-font;
+                font-weight: 800;
+                
+                }
+            }
+        }
+    }
+}

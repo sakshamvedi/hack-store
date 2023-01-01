@@ -1,6 +1,9 @@
 import {React,useEffect,useState , useContext} from 'react'
 import './HomeBody.css'
 import axios from 'axios';
+import {db} from "./firebase-config";
+import {collection , getDoc , addDoc} from "firebase/firestore"
+import { useNavigate } from 'react-router-dom';
 import {RiSailboatFill} from "react-icons/ri"
 import { AiFillHeart, AiFillStar, AiOutlineHeart, AiOutlineStar } from 'react-icons/ai';
 import {SiAcer, SiAdidas, SiAdobe, SiApplemusic, SiDell, SiFacebookgaming, SiInfiniti, SiLenovo, SiLogitech, SiNokia, SiPuma, SiReebok, SiSamsung} from 'react-icons/si'
@@ -9,6 +12,7 @@ const [image, setimage] = useState([]);
 const [datas , setdatas] = useState([]);
 // for changing the color icon of heart
 const [like, setlike] = useState(false);
+
 const [prodid , setprodid] = useState(-1);
 //for storing various products in an array 
 const [product, setproduct] = useState([{ id: 1, title: "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops", price: 109.95, description: "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday", category: "men's clothing", image: "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" }]);
@@ -40,9 +44,26 @@ const arr = await axios.get('https://fakestoreapi.com/products?');
  console.table(items.data.data);
 
 }
+const navigate = useNavigate();
 
+function viewproduct( title , price  , desc , image)
+{
+  navigate('/product' , {state : {id:1 , tit : title , pri :price , description : desc , ima : image }});
+}
 
+const dataref = localStorage.getItem("fcfxemailfcfx") ?  collection(db , localStorage.getItem("fcfxemailfcfx")) : "fakcollection"
+async function addtocart(tit , pri , im)
+{
 
+    await addDoc(dataref , {
+      titles : tit ,
+      price :pri,
+      image :im,
+    }) 
+
+ alert("Product added to cart ");
+      
+}
 
 
   return (
@@ -104,7 +125,11 @@ data.description.substring(0,data.description.length-200)}</p>
   <li> <AiOutlineStar/></li>
  
 </ul>
-<button>Add to Cart</button>
+{
+  localStorage.getItem("fcfxemailfcfx") ? <><button onClick={()=>addtocart(data.title , data.price ,data.image  )}>Add to Cart</button></>:<></>
+}
+
+<button onClick={()=>viewproduct(data.title , data.price , data.description , data.image  )}>View Product</button>
   </div>
 </div>
 

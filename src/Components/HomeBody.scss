@@ -144,8 +144,9 @@ cursor: pointer;
       font-family: variables.$primary-font;
       font-weight: 600;
       border-radius: 30px;
+     margin-right: 20px;
       &:hover{
-        background-color: rgba(0, 0, 0, 0.151);
+        background-color: rgba(188, 254, 21, 0.151);
         cursor: pointer;
         color: black;
       }

@@ -1,0 +1,195 @@
+@use 'variables';
+
+.container-box{
+    display: flex;
+margin-top: 20px;
+    .box1{
+        display: flex;
+        flex-direction: column;
+       
+        align-items: center;
+        background-color: variables.$primary-bg;
+        height: 450px;
+        width: 30%;
+        margin-right: 20px;
+
+        img{
+            
+            height: 300px;
+            width: 80%;
+        }
+        .smallbox{
+            margin-top: 20px;
+            height: 50px;
+            width: 50px;
+            border: solid orange 2px;
+            padding: 2px;
+            border-radius: 5px;
+
+            img{
+               
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .box2{
+        display: flex;
+        flex-direction: column;
+        height: 450px;
+        width:42%;
+        margin-right: 20px;
+
+        button{
+            margin-top: 20px;
+            width: 30%;
+            padding: 7px;
+            background-color: white;
+            border: solid 2px #03b60f;
+            font-family: variables.$primary-font;
+            border-radius: 15px;
+            font-weight: 900;
+            font-size: 15px;
+        }
+        h1{
+    font-family: variables.$cart-text;
+    font-size: 25px;
+    
+        }
+h2{
+    margin-top: 20px;
+    font-family: variables.$primary-font;
+  font-size: 15px;
+  font-weight: 100;
+  color: rgb(110, 110, 110);
+}
+.price-div{
+    p2{color: grey;
+        font-family: variables.$primary-font;
+        font-weight: 800;
+    }
+}
+        span{
+            display: flex;
+            align-items: center;
+
+            .disc{
+                margin-left: 10px;
+                font-family: variables.$primary-font;
+                color: red;
+                font-weight: 800;
+            }
+            p{
+                margin-left: 10px;
+                font-family: variables.$primary-font;
+                font-weight: 800;
+            }
+            
+            div{
+                background-color: #fdc201;
+                padding: 5px;
+                width: fit-content;
+                color: white;
+                display: flex;
+                align-items: center;
+                border-radius: 20px;
+                p1{
+                    margin-left: 8px;
+                    font-family: variables.$cart-text;
+                }
+            }
+            p2{
+                margin-left: 20px;
+                font-size: 13px;
+                color: gray;
+            }
+            
+
+        }
+    }
+    .box3{
+        display: flex;
+        flex-direction: column;
+      
+        padding: 20px;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+        height: 350px;
+        width: 30%;
+        margin-left: 20px;
+
+        label{
+            font-family: variables.$primary-font;
+            font-weight: 900;
+            margin-bottom: 20px;
+        }
+        input{
+            width: 80%;
+            outline: none;
+            font-family: variables.$primary-font;
+            font-weight: 900;
+            border: solid 2px rgba(128, 128, 128, 0.269);
+      
+            border-radius: 8px;
+            padding: 5px;
+        }
+        p1{
+            margin-top: 10px;
+            font-family: variables.$primary-font;
+            font-weight: 900;
+        }
+
+        div{
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            span{
+                display: flex;
+                justify-content: space-between;
+                p1{
+                    color: gray;
+                  
+                }
+                p2{
+                    font-family: variables.$primary-font;
+                    font-weight: 900;
+                }
+            }
+        }
+
+        button{
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #fb6a00;
+            border: none;
+            color: white;
+            font-family: variables.$primary-font;
+            font-weight: 900;
+            border-radius: 12px;
+   &:hover{
+    cursor: pointer;
+    background-color: #fb6900ac;
+   }
+   
+        }
+
+        .btn2{
+            margin-top: -5px;
+          button{
+            background-color: white;
+            border: solid #fb6a00 2px ;
+            border-radius: 12px;
+            color: #fb6a00;
+            font-family: variables.$cart-text;
+            font-weight: 900;
+   &:hover{
+    cursor: pointer;
+    color: white;
+    background-color: #fb6a00;
+   }
+          }
+        }
+    }
+
+
+}
