@@ -20,9 +20,9 @@ async function submit()
     await addDoc(dataref , {
         nameevent : eventname,
         orgainizername : orgainizer,
-        linkname :link,
+       bannerimage:link,
         numbername :number,
-        peoplename : people,
+       date : people,
 
     })
     alert("Your Event is Created ")
@@ -37,8 +37,8 @@ async function submit()
     <input placeholder='Enter the Event Name'  onChange={(e)=>{seteventname(e.target.value)}}  />
  <input placeholder='Enter the Event Organizer name' onChange={(e)=>{setorgainizer(e.target.value)}} />
  <input placeholder='Enter the Number of Event Organizer ' onChange={(e)=>{setnumber(e.target.value)}}   />
- <input placeholder='Any Form Link to collect Data' onChange={(e)=>{setlink(e.target.value)}}   />
- <input placeholder='No. of people can join  '  onChange={(e)=>{setpeople(e.target.value)}}   />
+ <input placeholder='Banner Image link of your event ' onChange={(e)=>{setlink(e.target.value)}}   />
+ <input placeholder='Date of Event (DD/MM/YY) '  onChange={(e)=>{setpeople(e.target.value)}}   />
  <button onClick={submit}>Create Event</button>
  
 </div>

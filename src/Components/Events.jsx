@@ -5,6 +5,7 @@ import {collection , getDoc , addDoc ,getDocs, doc} from "firebase/firestore"
 
 import './Events.css'
 import { async } from '@firebase/util';
+import { AiFillStar } from 'react-icons/ai';
 function Events() {
     const userref = collection(db , "fcfxeventfcfx");
     const [user, setusers]  = useState([]);
@@ -32,7 +33,7 @@ function Events() {
         
         </div>
      
-    <div className='events'>
+    {/* <div className='events'>
 
         {
             user.map((data)=>{
@@ -52,7 +53,45 @@ function Events() {
             })
         }
 
+    </div> */}
+
+<div className='eventcard'>
+{
+    user.map((data)=>{
+        return(
+            <>
+                <div className="card">
+        <div className="box1" style={{backgroundImage:`url(${data.bannerimage})`}}></div>
+        <span>
+
+            <div className="box3">Online</div>
+        </span>
+
+        <div className="box4">{data.nameevent}</div>
+        <div>
+        <span><AiFillStar size={20} color = "green"/>
+        <AiFillStar size={20} color = "green"/>
+        <AiFillStar size={20} color = "green"/>
+        <AiFillStar size={20} color = "green"/>
+        <AiFillStar size={20} color = "green"/></span>
+        </div>
+      
+            
+            <div className="box5">
+<button>{data.date}</button>            
+<button className='btn2'>Know More</button>
+
+            </div>
+        
     </div>
+            
+            </>
+        )
+    })
+}
+</div>
+
+
     </>
   )
 }

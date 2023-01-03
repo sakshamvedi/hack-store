@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap");
+.my-body {
+  width: 100%;
+}
+.my-body .shelves {
+  width: 100%;
+  background-color: #d28c37;
+  display: flex;
+}
+.my-body .shelves img {
+  width: 50%;
+  height: 450px;
+}
+.my-body .shelves div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 65%;
+}
+.my-body .shelves div h1 {
+  font-family: "Quicksand", sans-serif;
+  width: 70%;
+  color: white;
+}
+.my-body .shelves div p1 {
+  font-family: "Quicksand", sans-serif;
+  width: 70%;
+  color: white;
+}
+.my-body .shelves div button {
+  padding: 20px;
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border: none;
+  color: white;
+  border-radius: 10px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 900;
+}
+.my-body .books {
+  margin-left: 3%;
+  padding-bottom: 20px;
+}
+.my-body .books .books-guide {
+  display: flex;
+  flex-wrap: wrap;
+}
+.my-body .books .books-guide h1 {
+  font-family: "Quicksand", sans-serif;
+  margin-left: 3%;
+  font-size: 20px;
+}
+.my-body .books .books-guide .mainbox {
+  height: 500px;
+  width: 25%;
+  margin: 50px;
+  border-radius: 25px;
+  padding-bottom: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.my-body .books .books-guide .mainbox .box1 {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #d28c37;
+}
+.my-body .books .books-guide .mainbox .box1 img {
+  height: 100%;
+}
+.my-body .books .books-guide .mainbox .box2 {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.my-body .books .books-guide .mainbox .box2 span button {
+  margin-right: 30px;
+  padding: 7px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  background: linear-gradient(to right, #396afc, #2948ff);
+}
+.my-body .books .books-guide .mainbox .box2 .btn2 {
+  background: linear-gradient(to right, #f12711, #f5af19);
+}
+.my-body .books .books-guide .mainbox .box2 .area1 {
+  height: 50%;
+}
+.my-body .books .books-guide .mainbox .box2 .area1 span {
+  display: flex;
+  align-items: center;
+}
+.my-body .books .books-guide .mainbox .box2 .area1 span p {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 10px;
+  margin-left: 10px;
+}
+.my-body .books .books-guide .mainbox .box2 .area1 span h1 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 900;
+  width: 70%;
+}
+.my-body .books .books-guide .mainbox .box2 .area1 span p2 {
+  margin-left: 5%;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-weight: 900;
+}
+.my-body .books .books-guide .mainbox .box2 p1 {
+  opacity: 0.5;
+  font-size: 10px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}/*# sourceMappingURL=Books.css.map */

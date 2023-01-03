@@ -22,11 +22,15 @@ function logout()
    
     <h2>Hack-Store</h2>
      <h1>Home</h1>
-     <h1>Store</h1>
-     <Link to = "/Events" className='links'>
-     <h1>Apps</h1>
+     <Link to = "/books" className='links'>
+     <h1>Books</h1>
      </Link>
-     <h1>Game</h1>
+     <Link to = "/Events" className='links'>
+     <h1>Events</h1>
+     </Link>
+     <Link to= "/Rentals" className='links'>
+     <h1>Rentals</h1>
+     </Link>
      <span className='login'>
         <div className='search-place'>
         <input placeholder='Search Here'/>

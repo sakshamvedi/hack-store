@@ -27,51 +27,90 @@
   text-decoration: none;
 }
 
-.events {
+.eventcard {
+  width: 100%;
   display: flex;
-  flex-wrap: wrap;
-  margin-left: 50px;
-  align-items: center;
 }
-.events .events-cards {
-  display: flex;
-  flex-direction: row;
-  width: 30%;
-  margin: 50px;
-  border: solid 2px #e16753;
-  border-radius: 20px;
-  height: 250px;
-}
-.events .events-cards .box1 {
+.eventcard .card {
+  background: linear-gradient(to right, #d3cce3, #e9e4f0);
+  height: 350px;
   width: 20%;
-  background-color: #5487e2;
-  height: 100%;
-  border-top-left-radius: 18px;
-  border-bottom-left-radius: 18px;
-}
-.events .events-cards .box2 {
-  margin-top: 20px;
-  margin-left: 20px;
+  margin-left: 5%;
+  border-radius: 15px;
+  padding: 8px;
   display: flex;
   flex-direction: column;
 }
-.events .events-cards .box2 p1 {
-  margin-bottom: 10px;
-  font-family: "Quicksand", sans-serif;
-  font-weight: 800;
-}
-.events .events-cards .box2 button {
-  margin-bottom: 20px;
+.eventcard .card .box1 {
   width: 100%;
-  border: none;
-  background-color: #05871b;
-  padding: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60%;
   border-radius: 15px;
+  border-bottom-left-radius: 40px;
+}
+.eventcard .card span {
+  display: flex;
+}
+.eventcard .card span .box2 {
+  width: 25%;
+  position: relative;
+  top: -30px;
+  left: 10%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70px;
+}
+.eventcard .card span .box3 {
+  width: 40%;
+  height: 25px;
+  margin-left: 30%;
+  position: relative;
+  top: -10px;
+  background-color: green;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Quicksand", sans-serif;
+}
+.eventcard .card .box4 {
+  display: flex;
+  margin-top: 10px;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 900;
+}
+.eventcard .card div span {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.eventcard .card .box5 {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.eventcard .card .box5 button {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding: 5px;
+  background-color: #fd9c42;
+  border: solid 2px #f97e0a;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 900;
+  color: white;
+}
+.eventcard .card .box5 button:hover {
   cursor: pointer;
 }
-.events .events-cards .box2 button a {
-  color: white;
-  text-decoration: none;
-  font-family: "Quicksand", sans-serif;
-  font-weight: 800;
+.eventcard .card .box5 .btn2 {
+  background-color: white;
+  color: #f97e0a;
 }/*# sourceMappingURL=Events.css.map */

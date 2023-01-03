@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap");
+.rentcontainer {
+  display: flex;
+  width: 100%;
+  height: 350px;
+  background-color: white;
+}
+.rentcontainer .box1 {
+  width: 50%;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10%;
+}
+.rentcontainer .box1 p1 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+.rentcontainer .box1 h1 {
+  font-family: "Quicksand", sans-serif;
+}
+.rentcontainer .box1 p2 {
+  opacity: 0.7;
+  font-family: "Quicksand", sans-serif;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+.rentcontainer .box1 span {
+  display: flex;
+}
+.rentcontainer .box1 span button {
+  margin-right: 20px;
+  border: solid 2px #ff2c21;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #f4524a;
+  color: white;
+}
+.rentcontainer .box1 span .learn {
+  background-color: white;
+  color: black;
+}
+.rentcontainer .box2 {
+  margin-top: 20px;
+}
+.rentcontainer .box2 div {
+  background-color: #e0e3de;
+  border-radius: 50%;
+}
+.rentcontainer .box2 img {
+  height: 350px;
+  width: 100%;
+}
+
+.introcard {
+  margin-top: 150px;
+  margin-bottom: 40px;
+  width: 80%;
+  margin-left: 10%;
+  background-color: #f8f8f8;
+  height: 200px;
+  display: flex;
+}
+.introcard .box1 {
+  background-image: url("https://images.unsplash.com/photo-1503602642458-232111445657?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyNzg2NTJ8MHwxfHNlYXJjaHw5fHxjaGFpcnxlbnwwfHx8fDE2NzI3MzkzMDg&ixlib=rb-4.0.3&q=80&w=1080");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 20%;
+}
+.introcard .box2 {
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 100;
+  height: 100%;
+  width: 60%;
+}
+.introcard .box3 {
+  background-image: url("https://images.unsplash.com/photo-1567016432779-094069958ea5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyNzg2NTJ8MHwxfHNlYXJjaHwyfHxzb2ZhfGVufDB8fHx8MTY3MjczOTQwNw&ixlib=rb-4.0.3&q=80&w=1080");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 20%;
+}/*# sourceMappingURL=Rental.css.map */

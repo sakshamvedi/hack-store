@@ -12,6 +12,9 @@ import Product from './Components/Product';
 import Cart from './Components/Cart';
 import Events from './Components/Events';
 import CreateEvent from './Components/CreateEvent';
+import Books from './Components/Books';
+import Read from './Components/Read';
+import Rentals from './Components/Rentals';
 function App() {
   return (
     <div>
@@ -24,6 +27,9 @@ function App() {
       <Route path='/cart' element = {[<Navbar/>,<Cart/> ,<Footer/>]}/>
       <Route path='/product' element  = {[<Navbar/> ,<Product/> ,<Footer/> ]}/>  
       <Route path='/create' element  = {[<CreateEvent/>]}/>  
+      <Route path='/books' element  = {[<Navbar/>,<Books/>]}/> 
+      <Route path='/rentals' element  = {[<Navbar/>,<Rentals/>]}/> 
+    
       
   </Routes>
   </BrowserRouter>
